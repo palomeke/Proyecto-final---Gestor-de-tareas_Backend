@@ -13,15 +13,18 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    origin: "https://proyecto-final-gestor-de-tareas-backend.onrender.com",
+    origin: [
+      "http://localhost:5173",
+      "https://proyecto-final-gestor-de-tareas-frontend.vercel.app",
+    ],
+    credentials: true, // necesario si usas cookies o tokens
   })
 );
 
-// routes
-
+// Rutas
 app.use("/api/task", Taskrouter);
 
+// Conexión a MongoDB
 mongoose
   .connect(process.env.MONGODB_CONN)
   .then(() => {
