@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "http://localhost:5173",
-    origin: "https://proyecto-final-gestor-de-tareas-backend.onrender.com/api",
+    origin: "https://proyecto-final-gestor-de-tareas-backend.onrender.com",
   })
 );
 
