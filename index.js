@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://proyecto-final-gestor-de-tareas-backend.onrender.com",
+    origin: "https://proyecto-final-gestor-de-tareas-backend.onrender.com/api",
   })
 );
 
