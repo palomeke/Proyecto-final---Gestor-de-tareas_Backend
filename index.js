@@ -16,6 +16,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://proyecto-final-gestor-de-tareas-frontend.vercel.app",
+      "https://proyecto-final-gestor-de-tareas-ten.vercel.app", // ¡Agrega esta URL!
     ],
     credentials: true, // necesario si usas cookies o tokens
   })
